@@ -1,0 +1,13 @@
+/* global css */
+
+@import url(base.css);
+
+/* layout */
+
+@import url(layout/header.css);
+
+/* component */
+@import url(components/modal-search.css);
+
+/* slider */
+@import url(components/slider.css);
