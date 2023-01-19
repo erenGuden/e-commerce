@@ -5,9 +5,29 @@
 /* layout */
 
 @import url(layout/header.css);
+@import url(layout/footer.css);
 
 /* component */
 @import url(components/modal-search.css);
 
 /* slider */
 @import url(components/slider.css);
+
+/* pages */
+@import url(pages/home.css);
+@import url(pages/contact.css);
+
+/* category */
+@import url(components/category-item.css);
+
+/* product-item */
+@import url(components/product-item.css);
+
+/* campaings */
+@import url(components/campaign-item.css);
+
+@import url(components/blog-item.css);
+
+@import url(components/brand-item.css);
+
+@import url(components/campaign-single.css);
