@@ -9,6 +9,11 @@
 
 /* component */
 @import url(components/modal-search.css);
+@import url(components/single-product/breadcrumb.css);
+@import url(components/single-product/product-gallery.css);
+@import url(components/single-product/product-info.css);
+@import url(components/single-product/product-tabs.css);
+@import url(components/reviews.css);
 
 /* slider */
 @import url(components/slider.css);
@@ -16,6 +21,9 @@
 /* pages */
 @import url(pages/home.css);
 @import url(pages/contact.css);
+@import url(pages/account.css);
+@import url(pages/cart.css);
+@import url(pages/single-product.css);
 
 /* category */
 @import url(components/category-item.css);
@@ -23,7 +31,7 @@
 /* product-item */
 @import url(components/product-item.css);
 
-/* campaings */
+/* campaigns */
 @import url(components/campaign-item.css);
 
 @import url(components/blog-item.css);

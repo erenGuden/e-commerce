@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Account</title>
     <!-- Bootstrap Icons CDN -->
     <link
       rel="stylesheet"
@@ -54,7 +54,7 @@
                     </div>
                   </li>
                   <li class="menu-list-item megamenu-wrapper">
-                    <a href="#" class="menu-link"
+                    <a href="shop.html" class="menu-link"
                       >SHOP <i class="bi bi-chevron-compact-down"></i
                     ></a>
                     <div class="menu-dropdown-wrapper">
@@ -143,10 +143,10 @@
                     </div>
                   </li>
                   <li class="menu-list-item">
-                    <a href="#" class="menu-link"> BLOG </a>
+                    <a href="blog.html" class="menu-link"> BLOG </a>
                   </li>
                   <li class="menu-list-item">
-                    <a href="#" class="menu-link active">CONTACT US</a>
+                    <a href="contact.html" class="menu-link">CONTACT US</a>
                   </li>
                 </ul>
               </nav>
@@ -176,7 +176,6 @@
       </div>
     </header>
     <!-- header ends -->
-
     <!-- modal search starts -->
     <div class="modal-search">
       <div class="modal-wrapper">
@@ -225,94 +224,73 @@
       </div>
     </div>
     <!-- modal search ends -->
-    <!-- contact starts -->
-    <section class="contact">
-      <div class="contact-top">
-        <div class="contact-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.737778760894!2d-118.25918558392969!3d34.05059692526263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b396141817%3A0xd83f7a67a9b642a1!2sFinancial%20District%2C%20Los%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1674110588746!5m2!1sen!2sus"
-            width="100%"
-            height="500"
-            style="border: 1"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-      <div class="contact-bottom">
-        <div class="container">
-          <div class="contact-titles">
-            <h4>Contact with us</h4>
-            <h2>Get in touch</h2>
-            <p>Reach us out through the textbox below for your queries.</p>
-          </div>
-          <div class="contact-elements">
-            <form class="contact-form">
-              <div class="">
-                <label
-                  >Your Name:
-                  <span>*</span>
-                </label>
-                <input type="text" required />
-              </div>
-              <div class="">
-                <label
-                  >Your Email:
-                  <span>*</span>
-                </label>
-                <input type="text" required />
-              </div>
-              <div class="">
-                <label
-                  >Subject:
-                  <span>*</span>
-                </label>
-                <input type="text" required />
-              </div>
-              <div class="">
-                <label>Your Message: <span>*</span> </label>
-                <textarea
-                  id="author"
-                  name="author"
-                  type="text"
-                  size="30"
-                  required=""
-                ></textarea>
-              </div>
-              <button class="btn btn-sm form-button">Send message</button>
-            </form>
-            <div class="contact-info">
-              <div class="contact-info-item">
-                <div class="contact-info-texts">
-                  <strong>Clotya Store</strong>
-                  <p class="contact-street">
-                    Clotya Store United States - 785 15h Street, Office 478B
-                    Green Square, Los Angeles, US 90000
-                  </p>
-                  <a href="tel:+1 1234 567 89 88">Phone: 1234 567 89 88</a>
-                  <a href="mailto: contact@example.com"
-                    >Email: contact@example.com</a
+    <!-- account starts -->
+    <section class="account-page">
+      <div class="container">
+        <div class="account-wrapper">
+          <div class="account-column">
+            <h2>Login</h2>
+            <form>
+              <div>
+                <label>
+                  <span
+                    >Username or email address<span class="required"
+                      >*</span
+                    ></span
                   >
-                </div>
+                  <input type="text" />
+                </label>
               </div>
-              <div class="contact-info-item">
-                <div class="contact-info-texts">
-                  <strong>Opening hours</strong>
-                  <p class="contact-date">
-                    Monday through Friday
-                    <br />08:00 - 17:00
-                  </p>
-                </div>
+              <div>
+                <label>
+                  <span>Password<span class="required">*</span></span>
+                  <input type="password" />
+                </label>
               </div>
-            </div>
+              <p class="remember">
+                <label>
+                  <input type="checkbox" />
+                  <span>Remember me</span>
+                </label>
+                <button class="btn btn-sm">Login</button>
+                <a href="#" class="form-link">Forgot your password?</a>
+              </p>
+            </form>
+          </div>
+          <div class="account-column">
+            <h2>Register</h2>
+            <form>
+              <div>
+                <label>
+                  <span>Username<span class="required">*</span></span>
+                  <input type="text" />
+                </label>
+              </div>
+              <div>
+                <label>
+                  <span>Email address<span class="required">*</span></span>
+                  <input type="email" />
+                </label>
+              </div>
+              <div>
+                <label>
+                  <span>Password<span class="required">*</span></span>
+                  <input type="password" />
+                </label>
+              </div>
+              <p class="privacy-policy-text remember">
+                Your personal data will be used to support your experience
+                throughout this website, to manage access to your account, and
+                for other purposes described in our
+                <a href="#">privacy policy.</a>
+                <button class="btn btn-sm">Register</button>
+              </p>
+            </form>
           </div>
         </div>
       </div>
     </section>
-    <!-- contact ends -->
-
-    <!-- new arrivals start -->
+    <!-- account ends -->
     <!-- policy starts -->
     <section class="policy">
       <div class="container">
