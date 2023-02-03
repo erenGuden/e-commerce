@@ -125,3 +125,23 @@
   font-size: 14px;
   display: flex;
 }
+
+.product-wrapper {
+  position: relative;
+}
+
+.product-wrapper .glide__arrow{
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.product-wrapper .glide__arrow--left {
+  left: 0;
+}
+
+.product-wrapper .glide__arrow--right {
+  right: 0;
+}
+

@@ -6,6 +6,8 @@
 .section-title h2 {
   font-size: 32px;
   font-weight: 600;
+  line-height: 0.8;
+  margin-bottom: 4px;
 }
 
 /* categories starts */
@@ -16,7 +18,6 @@
 .categories .category-list {
   display: flex;
   gap: 30px;
-  margin: 30px;
   flex-wrap: wrap;
 }
 /* categories ends */
@@ -26,12 +27,15 @@
 .products {
   margin-bottom: 80px;
 }
-
-.products .product-list {
-  display: flex;
-  grid-gap: 20px;
-  flex-wrap: wrap;
+.product-wrapper {
+  position: inherit;
 }
+
+/* .products .product-list {
+  /* display: flex;
+  grid-gap: 20px;
+  flex-wrap: wrap; */
+} */
 /* products ends */
 
 /* campaign starts */
