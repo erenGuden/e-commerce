@@ -88,8 +88,8 @@
   }
   
   .slider .slider-dots .slider-dot:hover{
+    background-color: white;
     opacity: 1;
-    border-radius: 100%;
   }
 
   .slider .slider-dots .slider-dot span{
@@ -98,25 +98,6 @@
     background-color: #1367ef;
     border-radius: 100%;
     display: inline-block;
-  }
-
-  .slider .slider-dots .slider-dot.active {
-    opacity: 1;
-    border-radius: 100%;
-  }
-
-  .fade{
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @keyframes fade {
-    from{
-      opacity: 0.4;
-    }
-    to{
-      opacity: 1;
-    }
   }
 
   @media(max-width:768px){
