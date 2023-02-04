@@ -31,11 +31,11 @@
   position: inherit;
 }
 
-/* .products .product-list {
-  /* display: flex;
+.products .product-list {
+  display: flex;
   grid-gap: 20px;
-  flex-wrap: wrap; */
-} */
+  flex-wrap: wrap;
+}
 /* products ends */
 
 /* campaign starts */
