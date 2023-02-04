@@ -85,7 +85,7 @@ header {
 .header-right .bi-person {
   font-size: 23px;
 }
-.header-right .search-button {
+.header-right .toggle-button {
   border: none;
   background-color: transparent;
 }
@@ -215,8 +215,6 @@ header .menu-dropdown-content a:hover {
     left: -100%;
     background-color: white;
     border-right: 1px solid #dee0ea;
-    z-index: 2;
-    transition: 0.5s ease all;
   }
 
   .header-center .bi-x-circle {
