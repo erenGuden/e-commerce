@@ -115,6 +115,12 @@
   transition: all ease 0.4s;
 }
 
+.product-item .product-links button:disabled,
+.product-item .product-links a:disabled {
+  opacity: 0.4;
+  cursor: no-drop;
+}
+
 .product-item .product-links button:hover,
 .product-item .product-links a:hover {
   opacity: 0.7;
@@ -124,6 +130,7 @@
   color: #fff;
   font-size: 14px;
   display: flex;
+  pointer-events: none;
 }
 
 .product-wrapper {

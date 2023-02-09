@@ -1,12 +1,43 @@
 import { product1, product2 } from "./glide.js";
 
+let products = [];
+let cart = [];
+
+cart = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart"))
+  : [];
+
+function addToCart() {
+  const cartItems = document.querySelector(".header-cart-count");
+  const buttons = [...document.getElementsByClassName("add-to-cart")];
+  buttons.forEach((button) => {
+    const inCart = cart.find((item) => item.id === Number(button.dataset.id));
+
+    if (inCart) {
+      button.setAttribute("disabled", "disabled");
+    } else {
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+        const id = e.target.dataset.id;
+        const findProduct = products.find(
+          (product) => product.id === Number(id)
+        );
+        cart.push({ ...findProduct, quantity: 1 });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        button.setAttribute("disabled", "disabled");
+        cartItems.innerHTML = cart.length;
+      });
+    }
+  });
+}
+
 function productsFunc() {
-  const products = localStorage.getItem("products")
+  products = localStorage.getItem("products")
     ? JSON.parse(localStorage.getItem("products"))
     : [];
+
   const productsContainer = document.getElementById("product-list");
   const productsContainer2 = document.getElementById("product-list2");
-
   let results = "";
   products.forEach((item) => {
     results += `
@@ -42,7 +73,7 @@ function productsFunc() {
         </div>
         <span class="product-discount">-${item.discount}%</span>
         <div class="product-links">
-          <button>
+          <button class="add-to-cart" data-id=${item.id}>
             <i class="bi bi-basket-fill"></i>
           </button>
           <button>
@@ -58,10 +89,9 @@ function productsFunc() {
       </div>
     </li>
     `;
-    productsContainer.innerHTML = results;
+    productsContainer ? (productsContainer.innerHTML = results) : "";
   });
   product1();
-
   let results2 = "";
   products.forEach((item) => {
     results2 += `
@@ -97,7 +127,7 @@ function productsFunc() {
         </div>
         <span class="product-discount">-${item.discount}%</span>
         <div class="product-links">
-          <button>
+          <button class="add-to-cart" data-id=${item.id}>
             <i class="bi bi-basket-fill"></i>
           </button>
           <button>
@@ -113,9 +143,10 @@ function productsFunc() {
       </div>
     </li>
     `;
-    productsContainer2.innerHTML = results2;
+    productsContainer2 ? (productsContainer2.innerHTML = results2) : "";
   });
   product2();
+  addToCart();
 }
 
-export default productsFunc();
+export default productsFunc;
