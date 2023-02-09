@@ -1,9 +1,10 @@
 import { product1, product2 } from "./glide.js";
 
-let products = [];
-let cart = [];
+let products = localStorage.getItem("products")
+  ? JSON.parse(localStorage.getItem("products"))
+  : [];
 
-cart = localStorage.getItem("cart")
+let cart = localStorage.getItem("cart")
   ? JSON.parse(localStorage.getItem("cart"))
   : [];
 
@@ -32,10 +33,6 @@ function addToCart() {
 }
 
 function productsFunc() {
-  products = localStorage.getItem("products")
-    ? JSON.parse(localStorage.getItem("products"))
-    : [];
-
   const productsContainer = document.getElementById("product-list");
   const productsContainer2 = document.getElementById("product-list2");
   let results = "";
