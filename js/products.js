@@ -32,6 +32,20 @@ function addToCart() {
   });
 }
 
+function productRoute() {
+  const productLink = document.getElementsByClassName("product-link");
+  // console.log(productLink);
+  Array.from(productLink).forEach((button) => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      const id = e.target.dataset.id;
+      console.log(id);
+      localStorage.setItem("productId", JSON.stringify(id));
+      window.location.href = "single-product.html";
+    });
+  });
+}
+
 function productsFunc() {
   const productsContainer = document.getElementById("product-list");
   const productsContainer2 = document.getElementById("product-list2");
@@ -76,7 +90,7 @@ function productsFunc() {
           <button>
             <i class="bi bi-heart-fill"></i>
           </button>
-          <a href="#">
+          <a href="#" class="product-link" data-id=${item.id}>
             <i class="bi bi-eye-fill"></i>
           </a>
           <a href="#">
@@ -130,7 +144,7 @@ function productsFunc() {
           <button>
             <i class="bi bi-heart-fill"></i>
           </button>
-          <a href="#">
+          <a href="#" class="product-link" data-id=${item.id}>
             <i class="bi bi-eye-fill"></i>
           </a>
           <a href="#">
@@ -144,6 +158,7 @@ function productsFunc() {
   });
   product2();
   addToCart();
+  productRoute();
 }
 
 export default productsFunc;

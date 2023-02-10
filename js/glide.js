@@ -41,4 +41,22 @@ export function product2() {
     },
   };
   productsContainer2 && new Glide(".product-carousel2", config2).mount();
+
+  const config3 = {
+    perView: 5,
+    gap: 5,
+    bound: true,
+    breakpoints: {
+      992: {
+        perView: 3,
+      },
+      768: {
+        perView: 2,
+      },
+      576: {
+        perView: 1,
+      },
+    },
+  };
+  new Glide(".product-thumb", config3).mount();
 }
