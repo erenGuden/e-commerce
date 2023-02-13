@@ -1,4 +1,4 @@
-import { product1, product2 } from "./glide.js";
+import { product1, product2, product3 } from "./glide.js";
 
 let products = localStorage.getItem("products")
   ? JSON.parse(localStorage.getItem("products"))
@@ -34,7 +34,6 @@ function addToCart() {
 
 function productRoute() {
   const productLink = document.getElementsByClassName("product-link");
-  // console.log(productLink);
   Array.from(productLink).forEach((button) => {
     button.addEventListener("click", function (e) {
       e.preventDefault();
@@ -103,6 +102,7 @@ function productsFunc() {
     productsContainer ? (productsContainer.innerHTML = results) : "";
   });
   product1();
+
   let results2 = "";
   products.forEach((item) => {
     results2 += `
@@ -157,6 +157,7 @@ function productsFunc() {
     productsContainer2 ? (productsContainer2.innerHTML = results2) : "";
   });
   product2();
+  product3();
   addToCart();
   productRoute();
 }
