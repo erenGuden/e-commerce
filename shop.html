@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
+    <!-- GlideJs Css CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+    />
     <!-- Bootstrap Icons CDN -->
     <link
       rel="stylesheet"
@@ -29,10 +34,12 @@
         <div class="container">
           <div class="header-wrapper">
             <div class="header-mobile">
-              <i class="bi bi-list"></i>
+              <i class="bi bi-list" id="btn-menu"></i>
             </div>
-            <div class="header-left"><a href="#" class="logo">LOGO</a></div>
-            <div class="header-center">
+            <div class="header-left">
+              <a href="index.html" class="logo">LOGO</a>
+            </div>
+            <div class="header-center" id="sidebar">
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
@@ -150,21 +157,21 @@
                   </li>
                 </ul>
               </nav>
-              <i class="bi-x-circle"></i>
+              <i class="bi-x-circle" id="close-sidebar"></i>
             </div>
             <div class="header-right">
               <div class="header-right-links">
-                <a href="#" class="header-account">
+                <a href="account.html" class="header-account">
                   <i class="bi bi-person"> </i>
                 </a>
-                <button class="toggle-button">
+                <button class="search-button">
                   <i class="bi bi-search"></i>
                 </button>
                 <a href="#">
                   <i class="bi bi-heart"> </i>
                 </a>
                 <div class="header-cart">
-                  <a href="#" class="header-cart-link">
+                  <a href="cart.html" class="header-cart-link">
                     <i class="bi bi-bag"> </i>
                     <span class="header-cart-count">0</span>
                   </a>
@@ -176,7 +183,6 @@
       </div>
     </header>
     <!-- header ends -->
-
     <!-- modal search starts -->
     <div class="modal-search">
       <div class="modal-wrapper">
@@ -221,10 +227,41 @@
             </a>
           </div>
         </div>
-        <i class="bi bi-x-circle"></i>
+        <i class="bi bi-x-circle" id="close-search"></i>
       </div>
     </div>
     <!-- modal search ends -->
+    <!-- modal dialog starts -->
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button class="modal-close">
+          <i class="i bi-x"></i>
+        </button>
+        <div class="modal-image">
+          <img src="/img/modal-dialog.jpg " alt="" />
+        </div>
+        <div class="popup-wrapper">
+          <div class="popup-content">
+            <div class="popup-title">
+              <h3>NEWSLETTER</h3>
+            </div>
+            <p class="popup-text">
+              Sign up to our newsletter and get exclusive deals you won't find
+              anywhere else!
+            </p>
+            <form class="popup-form">
+              <input type="text" placeholder="Enter email address here" />
+              <button class="btn btn-primary">SUBSCRIBE</button>
+              <label>
+                <input type="checkbox" />
+                <span>Don't show this popup again</span>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal dialog ends -->
     <!-- category starts -->
     <section class="categories">
       <div class="container">
@@ -306,244 +343,18 @@
           <h2>Featured Products</h2>
           <p>Summer Collection New Modern Design</p>
         </div>
-        <div class="product-wrapper">
-          <ul class="product-list">
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img src="img/products/product1/1.png" class="img1" />
-                  <img src="img/products/product1/2.png" class="img2" />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Anaologue Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-half"></i>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-%17</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img src="img/products/product2/1.png" class="img1" />
-                  <img src="img/products/product2/2.png" class="img2" />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Anaologue Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-half"></i>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-%17</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img src="img/products/product3/1.png" class="img1" />
-                  <img src="img/products/product3/2.png" class="img2" />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Anaologue Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-half"></i>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-%17</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img src="img/products/product4/1.png" class="img1" />
-                  <img src="img/products/product4/2.png" class="img2" />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Anaologue Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-half"></i>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-%17</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img src="img/products/product5/1.png" class="img1" />
-                  <img src="img/products/product5/2.png" class="img2" />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Anaologue Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-half"></i>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-%17</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
+        <div class="product-wrapper product-carousel">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="product-list glide__slides" id="product-list"></ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -569,244 +380,18 @@
           <h2>New Arrivals</h2>
           <p>Summer Collection New Modern Design</p>
         </div>
-        <div class="product-wrapper">
-          <ul class="product-list">
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img src="img/products/product1/1.png" class="img1" />
-                  <img src="img/products/product1/2.png" class="img2" />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Anaologue Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-half"></i>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-%17</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img src="img/products/product2/1.png" class="img1" />
-                  <img src="img/products/product2/2.png" class="img2" />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Anaologue Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-half"></i>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-%17</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img src="img/products/product3/1.png" class="img1" />
-                  <img src="img/products/product3/2.png" class="img2" />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Anaologue Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-half"></i>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-%17</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img src="img/products/product4/1.png" class="img1" />
-                  <img src="img/products/product4/2.png" class="img2" />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Anaologue Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-half"></i>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-%17</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img src="img/products/product5/1.png" class="img1" />
-                  <img src="img/products/product5/2.png" class="img2" />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Anaologue Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-half"></i>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-%17</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
+        <div class="product-wrapper product-carousel2">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="product-list glide__slides" id="product-list2"></ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -1035,5 +620,8 @@
       </div>
     </footer>
     <!-- footer ends -->
+    <script src="js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/glide.js" type="module"></script>
   </body>
 </html>

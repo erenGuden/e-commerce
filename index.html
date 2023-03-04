@@ -31,7 +31,7 @@
           <div class="header-mobile">
             <i class="bi bi-list" id="btn-menu"></i>
           </div>
-          <div class="header-left"><a href="#" class="logo">LOGO</a></div>
+          <div class="header-left"><a href="index.html" class="logo">LOGO</a></div>
           <div class="header-center" id="sidebar">
             <nav class="navigation">
               <ul class="menu-list">
@@ -83,9 +83,9 @@
                             </li>
                           </ul>
                         </div>
-                        </div>
-                        <div class="megamenu-products">
-                          <h3 class="megamenu-products-title">Filter Layout</h3>
+                      </div>
+                      <div class="megamenu-products">
+                        <h3 class="megamenu-products-title">Filter Layout</h3>
                         <ul class="megamenu-menu-list">
                           <li>
                             <a href="#">Sidebar</a>
@@ -150,7 +150,7 @@
           </div>
           <div class="header-right">
             <div class="header-right-links">
-              <a href="#" class="header-account">
+              <a href="account.html" class="header-account">
                 <i class="bi bi-person"> </i>
               </a>
               <button class="search-button">
@@ -212,7 +212,34 @@
     </div>
   </div>
   <!-- modal search ends -->
-
+  <!-- modal dialog starts -->
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button class="modal-close">
+        <i class="i bi-x"></i>
+      </button>
+      <div class="modal-image">
+        <img src="/img/modal-dialog.jpg " alt="">
+      </div>
+      <div class="popup-wrapper">
+        <div class="popup-content">
+          <div class="popup-title">
+            <h3>NEWSLETTER</h3>
+          </div>
+          <p class="popup-text">Sign up to our newsletter and get exclusive deals you won't find anywhere else!</p>
+          <form class="popup-form">
+            <input type="text" placeholder="Enter email address here">
+            <button class="btn btn-primary">SUBSCRIBE</button>
+            <label>
+              <input type="checkbox">
+              <span>Don't show this popup again</span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal dialog ends -->
   <!-- slider starts -->
   <section class="slider">
     <div class="slider-elements">
@@ -225,7 +252,7 @@
           <h2 class="slider-heading">Save up to 70%</h2>
           <a href="#" class="btn btn-lg btn-primary">Explore now</a>
         </div>
-      </div> 
+      </div>
       <div class="slider-item fade">
         <div class="slider-image">
           <img src="img/slider/slider2.jpg" class="img-fluid" alt="" />
@@ -325,15 +352,17 @@
         <h2>Featured Products</h2>
         <p>Summer Collection New Modern Design</p>
       </div>
-    <div class="product-wrapper product-carousel" >
-     <div class="glide__track" data-glide-el="track">
-      <ul class="product-list glide__slides"  id="product-list"></ul>
-     </div>
-     <div class="glide__arrows" data-glide-el="controls">
-      <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="bi bi-chevron-left"></i> </button>
-      <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="bi bi-chevron-right"></i></button>
-    </div>
-    </div>
+      <div class="product-wrapper product-carousel">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="product-list glide__slides" id="product-list"></ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+              class="bi bi-chevron-right"></i></button>
+        </div>
+      </div>
     </div>
   </section>
   <!-- product ends -->
@@ -381,15 +410,17 @@
         <h2>New Arrivals</h2>
         <p>Summer Collection New Modern Design</p>
       </div>
-    <div class="product-wrapper product-carousel2" >
-     <div class="glide__track" data-glide-el="track">
-      <ul class="product-list glide__slides" id="product-list2"></ul>
-     </div>
-     <div class="glide__arrows" data-glide-el="controls">
-      <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="bi bi-chevron-left"></i> </button>
-      <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="bi bi-chevron-right"></i></button>
-    </div>
-    </div>
+      <div class="product-wrapper product-carousel2">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="product-list glide__slides" id="product-list2"></ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+              class="bi bi-chevron-right"></i></button>
+        </div>
+      </div>
     </div>
   </section>
   <!-- new arrivals end -->
@@ -399,11 +430,11 @@
       <div class="section-title">
         <h2>From Our Blog</h2>
       </div>
-        <ul class="blog-list">
-          <li class="blog-item">
-            <a href="#" class="blog-image">
-              <img src="img/blogs/blog1.jpg" alt="">
-            </a>
+      <ul class="blog-list">
+        <li class="blog-item">
+          <a href="#" class="blog-image">
+            <img src="img/blogs/blog1.jpg" alt="">
+          </a>
           <div class="blog-info">
             <div class="blog-info-top">
               <span>25 Feb, 2021</span>
@@ -577,93 +608,93 @@
             </div>
             <div class="footer-contact">
               <p>
-              <a href="tel:80012345678">+(800)1234 5678 90</a>-
-              <a href="mailto:info@example.com"> info@example.com</a>
-            </p>
+                <a href="tel:80012345678">+(800)1234 5678 90</a>-
+                <a href="mailto:info@example.com"> info@example.com</a>
+              </p>
             </div>
           </div>
           <div class="widget-nav-menu">
             <h4>Information</h4>
-          <ul class="menu-list">
-            <li>
-              <a href="#">About us</a>
-            </li>
-            <li>
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#">Return Policy</a>
-            </li>
-            <li>
-              <a href="#">Shipping Policy</a>
-            </li>
-            <li>
-              <a href="#">Dropshipping</a>
-            </li>
-          </ul>
+            <ul class="menu-list">
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Return Policy</a>
+              </li>
+              <li>
+                <a href="#">Shipping Policy</a>
+              </li>
+              <li>
+                <a href="#">Dropshipping</a>
+              </li>
+            </ul>
           </div>
           <div class="widget-nav-menu">
             <h4>Account</h4>
-          <ul class="menu-list">
-            <li>
-              <a href="#">Dashboard</a>
-            </li>
-            <li>
-              <a href="#">My Orders</a>
-            </li>
-            <li>
-              <a href="#">My Wishlist</a>
-            </li>
-            <li>
-              <a href="#">Account Details</a>
-            </li>
-            <li>
-              <a href="#">Account Details</a>
-            </li>
-            <li>
-              <a href="#">Track My Orders</a>
-            </li>
-          </ul>
+            <ul class="menu-list">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li>
+                <a href="#">My Orders</a>
+              </li>
+              <li>
+                <a href="#">My Wishlist</a>
+              </li>
+              <li>
+                <a href="#">Account Details</a>
+              </li>
+              <li>
+                <a href="#">Account Details</a>
+              </li>
+              <li>
+                <a href="#">Track My Orders</a>
+              </li>
+            </ul>
           </div>
           <div class="widget-nav-menu">
             <h4>Shop</h4>
-          <ul class="menu-list">
-            <li>
-              <a href="#">Affiliate</a>
-            </li>
-            <li>
-              <a href="#">Bestsellers</a>
-            </li>
-            <li>
-              <a href="#">Discount</a>
-            </li>
-            <li>
-              <a href="#">Latest Products</a>
-            </li>
-            <li>
-              <a href="#">Sale Products</a>
-            </li>
-          </ul>
+            <ul class="menu-list">
+              <li>
+                <a href="#">Affiliate</a>
+              </li>
+              <li>
+                <a href="#">Bestsellers</a>
+              </li>
+              <li>
+                <a href="#">Discount</a>
+              </li>
+              <li>
+                <a href="#">Latest Products</a>
+              </li>
+              <li>
+                <a href="#">Sale Products</a>
+              </li>
+            </ul>
           </div>
           <div class="widget-nav-menu">
             <h4>Categories</h4>
-          <ul class="menu-list">
-            <li>
-              <a href="#">Women</a>
-            </li>
-            <li>
-              <a href="#">Men</a>
-            </li>
-            <li>
-              <a href="#">Bags</a>
-            </li>
-            <li>
-              <a href="#">Outerwear</a>
-            </li>
-            <li>
-              <a href="#">Shoes</a>
-            </li>
-          </ul>
+            <ul class="menu-list">
+              <li>
+                <a href="#">Women</a>
+              </li>
+              <li>
+                <a href="#">Men</a>
+              </li>
+              <li>
+                <a href="#">Bags</a>
+              </li>
+              <li>
+                <a href="#">Outerwear</a>
+              </li>
+              <li>
+                <a href="#">Shoes</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -698,4 +729,5 @@
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script src="js/glide.js" type="module"></script>
 </body>
+
 </html>
