@@ -109,12 +109,21 @@
   font-weight: 600;
   font-size: 15px;
 }
+
 .footer-widgets .widget-nav-menu ul {
   margin-top: 20px;
   font-size: 13px;
   display: flex;
   flex-direction: column;
   row-gap: 5px;
+}
+
+.footer-widgets .widget-nav-menu ul li a {
+  transition: .2s ease all;
+}
+
+.footer-widgets .widget-nav-menu ul li a:hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 768px) {
